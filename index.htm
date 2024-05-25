@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a la Ciencia de Datos y Pandas</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #181717;
+            color: #f4efef;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #8d8a8a;
+            color: #f6f0f0;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .post {
+            background: #8d8a8a;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .post h2 {
+            color: #f5f5f5;
+        }
+        .post h3 {
+            color: #424141;
+        }
+        .post p, .post ul {
+            line-height: 1.6;
+        }
+        .post ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .btn-primary {
+            background-color: #424141;
+            color: #fff;
+            border: none;
+        }
+        .btn-secondary {
+            background-color: #424041;
+            color: #fff;
+            border: none;
+        }
+        footer {
+            background: #f4efef;
+            color: #080808;
+            text-align: center;
+            padding: 0px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Introducción a la Ciencia de Datos y Pandas</h1>
+    </header>
+
+    <div class="container">
+        <div class="post">
+            <h2>Ciencia de Datos</h2>
+            <img src="images\ciencia.jpg" alt="Ciencia de Datos">
+            <h3>¿Qué es ciencia de datos?</h3>
+            <p>La ciencia de datos es un campo interdisciplinario que utiliza métodos, procesos, algoritmos y sistemas científicos para extraer conocimiento e insights de datos estructurados y no estructurados. Es una continuación de algunas de las disciplinas de análisis de datos como la estadística, la minería de datos y el aprendizaje automático.</p>
+            <p>La ciencia de datos combina las matemáticas y la estadística, la programación especializada, el análisis avanzado, la inteligencia artificial (IA) y el machine learning con conocimientos específicos en la materia para descubrir conocimientos procesables ocultos en los datos de una organización. Estos conocimientos pueden utilizarse para orientar la toma de decisiones y la planificación estratégica.</p>
+            <p>El ciclo de vida de la ciencia de datos implica varias funciones, herramientas y procesos, que permiten a los analistas obtener conocimientos procesables. Normalmente, un proyecto de ciencia de datos pasa por las siguientes etapas:</p>
+            <p>Ingesta de datos: el ciclo de vida comienza con la recopilación de datos, tanto estructurados en bruto como no estructurados, de todas las fuentes pertinentes utilizando diversos métodos. Estos métodos pueden incluir la introducción manual de datos, la extracción de datos de la web y la transmisión de datos en tiempo real desde sistemas y dispositivos. Las fuentes de datos pueden incluir datos estructurados, como datos de clientes, junto con datos no estructurados como archivos de registro, vídeo, audio, imágenes, Internet de las Cosas (IoT), redes sociales, etc.</p>
+            <p>Almacenamiento y tratamiento de datos: dado que los datos pueden tener formatos y estructuras diferentes, las empresas deben considerar distintos sistemas de almacenamiento en función del tipo de datos que sea necesario capturar. Los equipos de gestión de datos ayudan a establecer normas en torno al almacenamiento y la estructura de los datos, lo que facilita los flujos de trabajo en torno a los modelos de análisis, machine learning y deep learning. Esta etapa incluye la limpieza de datos, la deduplicación, la transformación y la combinación de los datos mediante trabajos ETL (extracción, transformación, carga) u otras tecnologías de integración de datos. Esta preparación de datos es esencial para promover la calidad de los datos antes de cargarlos en un almacén de datos, data lake u otro repositorio.</p>
+            <p>Análisis de datos: en este caso, los científicos de datos realizan un análisis exploratorio de los datos para examinar sesgos, patrones, rangos y distribuciones de valores dentro de los datos. Esta exploración analítica de datos impulsa la generación de hipótesis para las pruebas a/b. También permite a los analistas determinar la relevancia de los datos para su uso dentro de los esfuerzos de modelado para el análisis predictivo, el machine learning y/o el deep learning. Dependiendo de la precisión de un modelo, las organizaciones pueden llegar a depender de estos conocimientos para la toma de decisiones empresariales, lo que les permite impulsar una mayor escalabilidad.</p>
+            <p>Comunicar: por último, los conocimientos se presentan en forma de informes y otras visualizaciones de datos que facilitan su comprensión por parte de los analistas empresariales y otros responsables de la toma de decisiones. Un lenguaje de programación de ciencia de datos como R o Python incluye componentes para generar visualizaciones; alternativamente, los científicos de datos pueden utilizar herramientas de visualización dedicadas.</p>
+
+
+            <h3>¿Por qué utilizar Python en ciencia de datos?</h3>
+            <p>Python es uno de los lenguajes de programación más populares en la ciencia de datos por varias razones:</p>
+            <ul>
+                <li>Es fácil de aprender y usar, lo que permite a los científicos de datos concentrarse en resolver problemas en lugar de preocuparse por la sintaxis complicada.</li>
+                <li>Cuenta con una gran cantidad de bibliotecas y frameworks específicos para ciencia de datos, como Pandas, NumPy, Matplotlib, Scikit-Learn y TensorFlow.</li>
+                <li>Tiene una gran comunidad de usuarios y desarrolladores que contribuyen con herramientas, soporte y mejoras constantes.</li>
+                <li>Es un lenguaje versátil que se puede usar para la automatización, el desarrollo web, la investigación académica y más.</li>
+            </ul>
+            <a href="#pandas" class="btn btn-primary">Aprender sobre Pandas</a>
+        </div>
+
+        <div class="post" id="pandas">
+            <h2>Pandas</h2>
+            <img src="images\panda.jpg" alt="Pandas">
+            <h3>¿Qué es Pandas?</h3>
+            <p>En Computación y Ciencia de datos, pandas es una biblioteca de software escrita como extensión de Numpy para manipulación y análisis de datos para el lenguaje de programación Python. En particular, ofrece estructuras de datos y operaciones para manipular tablas numéricas y series temporales.</p>
+            <p>Pandas es una biblioteca open-source de Python que proporciona estructuras de datos flexibles y herramientas de análisis de datos para manipular y visualizar información. Su objetivo principal es facilitar el manejo de datos estructurados, como tablas o dataframes, y ofrecer una amplia gama de herramientas para realizar operaciones comunes en el análisis de datos.</p>
+            <p>Una de las principales ventajas de pandas es su capacidad para manipular, limpiar y analizar datos de manera fácil y eficiente. Proporciona una amplia gama de funciones y métodos para realizar tareas comunes de análisis de datos, como filtrar, ordenar, agrupar, fusionar y transformar datos.
+
+                Otra característica importante de pandas es su capacidad para manejar grandes conjuntos de datos. Utiliza estructuras de datos optimizadas y técnicas de computación paralela para asegurar un rendimiento rápido y eficiente incluso con conjuntos de datos grandes.</p>
+
+            <h3>¿Cómo funciona?</h3>
+            <p>Pandas proporciona dos estructuras de datos principales: Series (una matriz unidimensional etiquetada) y DataFrame (una matriz bidimensional etiquetada). Estas estructuras permiten realizar operaciones complejas de manipulación de datos con facilidad.</p>
+
+            <h3>Ventajas</h3>
+            <ul>
+                <li>Manipulación de datos rápida y eficiente.</li>
+                <li>Funcionalidad de alineación de datos y manejo de datos faltantes.</li>
+                <li>Integración con otras bibliotecas de Python como NumPy y Matplotlib.</li>
+                <li>Soporte para diferentes formatos de archivos, como CSV, Excel, SQL y HDF5.</li>
+            </ul>
+
+            <h3>¿Cómo utilizan Pandas los científicos de datos?</h3>
+            <p>Utilizar pandas en Python tiene numerosas ventajas que lo convierten en una herramienta muy poderosa para el análisis de datos. A continuación, se enumeran algunas de las principales ventajas:</p>
+
+            <ul>
+                <li>Fácil manipulación de datos: pandas ofrece una amplia gama de funciones y métodos que facilitan la manipulación y transformación de datos. Esto incluye la capacidad de filtrar, ordenar y agrupar datos, así como realizar operaciones de unión y concatenación.</li>
+                <li>Tratamiento de datos faltantes: pandas proporciona métodos para manejar y trabajar con datos faltantes de manera efectiva. Esto permite realizar operaciones y cálculos incluso cuando algunos valores están ausentes.</li>
+                <li>Operaciones eficientes en grandes conjuntos de datos: pandas está optimizado para trabajar con grandes conjuntos de datos, lo que significa que puede realizar operaciones rápidas y eficientes en datos masivos.</li>
+                <li>Integración con otras bibliotecas de Python: pandas se integra fácilmente con otras bibliotecas populares de Python, como NumPy y Matplotlib, lo que permite realizar análisis y visualización de datos más avanzados.</li>
+                <li>MFunciones estadísticas y de análisis: pandas ofrece una amplia gama de funciones estadísticas y de análisis que facilitan la exploración y el entendimiento de los datos. Esto incluye funciones para calcular estadísticas descriptivas, realizar análisis de series de tiempo y realizar pruebas estadísticas.</li>
+            </ul>
+
+            <h3>¿Qué otras alternativas existen similares a Pandas?</h3>
+            <p>Existen varias alternativas a Pandas, algunas de las cuales son:</p>
+            <ul>
+                <li>Dask: Permite manejar conjuntos de datos que no caben en la memoria, dividiendo las tareas en partes más pequeñas.</li>
+                <li>Vaex: Especialmente bueno para trabajar con grandes conjuntos de datos fuera de la memoria.</li>
+                <li>DataFrame.jl: Una biblioteca de manipulación de datos para el lenguaje de programación Julia.</li>
+                <li>Apache Spark: Utilizado para procesamiento de datos a gran escala y proporciona una API similar a Pandas.</li>
+                <li>NumPy: NumPy es una biblioteca fundamental en Python para el manejo de arrays multidimensionales y realizar operaciones matemáticas de alto rendimiento. Aunque no proporciona la misma funcionalidad específica para el análisis de datos que pandas, es una excelente opción para tareas más generales de manipulación y cálculos numéricos.</li>
+                <li>Spark: Apache Spark es una plataforma de procesamiento distribuido que puede ser utilizada con Python a través de la biblioteca PySpark. Spark es especialmente útil para el procesamiento de datos a gran escala y proporciona una API similar a pandas llamada Spark DataFrame, que permite realizar operaciones de manipulación y análisis de datos de manera distribuida.</li>
+
+
+                <li>Bibliografía
+                    Jiménez, A. (2023, julio 20). ¿Qué es pandas en Python y cómo se utiliza? El Blog de Python. https://elblogpython.com/tecnologia/que-es-pandas-en-python-y-como-se-utiliza/
+                    
+                    ¿Qué es la ciencia de datos? (2024, abril 24). Ibm.com. https://www.ibm.com/es-es/topics/data-science</li>
+
+            </ul>
+            <a href="#top" class="btn btn-secondary">Volver al inicio</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ¿Qué es ciencia de datos y pandas? El Blog de Python.</p>
+    </footer>
+</body>
+</html>
